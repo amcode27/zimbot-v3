@@ -237,7 +237,7 @@ switch(hari) {
     if (isCmd) msgFilter.addFilter(from)
     
 // TIME 
-const time2 = moment().tz('Africa/Harare').format('HH:mm:ss')
+const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 if(time2 < "23:59:00"){
 var ucapannya2 = `Good Night 🌒`
 }
@@ -257,8 +257,8 @@ if(time2 < "05:00:00"){
 var ucapannya2 = `Good morning 🌅`
 }
 
-global.botdev = ['27634090203','447441437150']
-global.bothelp = ['918188019676']
+global.botdev = ['6282138037447']
+global.bothelp = ['6281277875182']
 
 //function rpg
    const { 
@@ -2692,7 +2692,7 @@ case 'bcimage': case 'bcvideo': case 'bcaudio': {
                     let butoon = [{
           urlButton: {
                   displayText: `GITHUB`,
-                  url: 'https://github.com/zim-bot/zimbot-v3'
+                  url: 'https://github.com/amcode27/zimbot-v3'
           }
                             },
                             {
@@ -6546,7 +6546,7 @@ Access with ${prefix}getmsg ${text}
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-*RESPOND SPEED* ${latensi.toFixed(4)} *SECONDS* \n ${oldd - neww} *MILLISECONDS*\n\n*RUNTIME* : ${runtime(process.uptime())}
+*Speed Bot ꧁ঔৣ☬AMͥcͣoͫde27☬ঔৣ꧂* ${latensi.toFixed(4)}}
 
 💻 *INFO SERVERS*
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
@@ -6556,14 +6556,12 @@ ${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.
 
 ${cpus[0] ? `*Total CPU USAGE*
 ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
-_CPU Core(s) Usage (${cpus.length} Core CPU)_
-${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
                 `.trim()
                 m.reply(respon)
             }
             break
             case 'speedtest': {
-            m.reply('Testing Speed...')
+            m.reply('Tes Kecepatan...')
             let cp = require('child_process')
             let { promisify } = require('util')
             let exec = promisify(cp.exec).bind(cp)
